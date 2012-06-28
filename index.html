@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Dynamic Storage Allocation</title>
+</head>
+<body>
+
+<h1>Dynamic Storage Allocation in JavaScript Demonstrating the Fifty Percent Rule</h1>
+
+<p>Total memory size <span id="memorySize"></span></p>
+<p>
+   Allocations: <span id="allocationCount"></span>
+</p>
+
+<div id="allocationGraph" style="min-width: 400px; height: 200px; margin: 0 auto;"></div>
+<div id="fragmentationGraph" style="min-width: 400px; height: 200px; margin: 20px auto;"></div>
+
+</body>
+<script type="text/javascript">
+   window.MemSim = {
+      strategies: {},
+      dataViz: {},
+      active: null
+   };
+</script>
+<script src="js/lib/jquery-1.7.2.min.js"></script>
+<script src="js/lib/highcharts.src.js"></script>
+<script src="js/allocations.js"></script>
+<script src="js/buddySystem.js"></script>
+<script src="js/dataviz.js"></script>
+<script src="js/firstAvailable.js"></script>
+<script src="js/simulator.js"></script>
+<script src="js/timing.js"></script>
+</html>
